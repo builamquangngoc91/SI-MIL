@@ -6,7 +6,7 @@
 #SBATCH --mem=24G
 #SBATCH --cpus-per-task=4
 #SBATCH --time=3-00:00:00
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:volta:1
 
 echo "Starting si-mil job on compute-0-5"
 
