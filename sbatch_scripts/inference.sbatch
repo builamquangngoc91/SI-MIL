@@ -17,8 +17,8 @@ python inference.py \
     --features_path "./LUNG/DINO/binned_hcf.csv" \
     --model_weights_path "MIL_experiment/result/checkpoint_best.pth" \
     --top_k 20 \
-    --gpu_index 0 \ 
-    --use_additive 'yes' \ 
+    --gpu_index 0 \
+    --use_additive 'yes' \
     --temperature 3.0 \
     --percentile 0.75  \
     --no_projection 'yes' \
