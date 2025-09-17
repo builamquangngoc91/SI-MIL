@@ -63,7 +63,7 @@ def test(test_list, dataset_split_dict, dataset_split_deep_dict, features_array,
 			
 			test_bag_features[i] = bag_features.squeeze(0).squeeze(0)
 
-			attention_test_bag_patch[i] = A.clone()
+			attention_test_bag_patch[i] = A_patch.clone()
 			attention_test_bag_feature[i] = A_feat.clone()
 
 	test_labels = np.array(test_labels)
