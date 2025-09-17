@@ -9,15 +9,13 @@
 
 echo "Starting si-mil job on compute-0-5"
 
-features_dir='path/to/test_dataset/features'
-
-python inference.py 
-    --dataset_split_path "$features_dir/train_dict.pickle" \
-    --dataset_split_path_test "$features_dir/test_dict.pickle"  \
-    --dataset_split_deep_path_test "$features_dir/test_dict_deep.pickle" \
-    --features_deep_path_test "$features_dir/testfeat_deep.pth" \
-    --features_path "$features_dir/binned_hcf.csv" \
-    --model_weights_path "$features_dir/MIL_experiment/path/to/mil model weights" \
+python inference.py \
+    --dataset_split_path "./LUNG/PathExpert/train_dict.pickle" \
+    --dataset_split_path_test "./LUNG/PathExpert/test_dict.pickle"  \
+    --dataset_split_deep_path_test "./LUNG/DINO/test_dict_deep.pickle" \
+    --features_deep_path_test "./LUNG/DINO/testfeat_deep.pth" \
+    --features_path "./LUNG/DINO/binned_hcf.csv" \
+    --model_weights_path "MIL_experiment/result/checkpoint_best.pth" \
     --top_k 20 \
     --gpu_index 0 \ 
     --use_additive 'yes' \ 
