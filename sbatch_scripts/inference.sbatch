@@ -2,7 +2,7 @@
 
 #SBATCH --job-name=si-mil
 #SBATCH --output=logs/inference.log
-#SBATCH --nodelist=compute-0-5
+#SBATCH --nodelist=compute-0-1
 #SBATCH --mem=24G
 #SBATCH --cpus-per-task=4
 #SBATCH --time=3-00:00:00
